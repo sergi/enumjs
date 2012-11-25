@@ -1,5 +1,6 @@
 var assert = require('assert');
-var Enum = require("../lib/enum.js");
+var libpath = process.env['VFS_FTP_COV'] ? '../lib-cov' : '../lib';
+var Enum = require(libpath + "/enum.js");
 
 describe('Enum', function() {
     describe("when creating an Enum", function() {
